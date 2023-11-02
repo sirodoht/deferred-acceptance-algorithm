@@ -1,0 +1,2 @@
+matching==1.4.3
+jupyter==1.0.0
