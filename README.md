@@ -12,7 +12,7 @@ mechanism from the point of view of the proposing participants (women in our
 example), for whom the solution will always be optimal (but not from the point
 of view of the accepting/rejecting participants (men in our example).
 
-> The above adapter from Wikipedia: https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm
+> The above adapted from Wikipedia: https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm
 
 [deferred-acceptance.ipynb](deferred-acceptance.ipynb) is a Jupyter notebook,
 which goes through a non-optimised and easy to reason implementation of the
@@ -30,6 +30,4 @@ which implements the deferred acceptance algorithm.
 that the matching library uses but made easier to understand when reading it,
 with an example application of 3+3 persons.
 
-## License
-
-MIT
+Code licensed under MIT.
