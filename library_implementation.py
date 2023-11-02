@@ -2,15 +2,15 @@ from matching import Player
 from matching.games import StableMarriage
 
 women = [
-    Player("ella"),
-    Player("lefke"),
-    Player("julia"),
+    Player("betty"),
+    Player("claire"),
+    Player("alice"),
 ]
 
 men = [
-    Player("ted"),
-    Player("sasha"),
-    Player("jethro"),
+    Player("aaron"),
+    Player("brad"),
+    Player("charles"),
 ]
 
 ella, lefke, julia = women

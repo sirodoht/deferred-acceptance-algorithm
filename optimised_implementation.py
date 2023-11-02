@@ -4,22 +4,22 @@ def get_key(val, my_dict):
             return key
     raise ValueError('Value does not exist in the dictionary')
 
-men = ["ted", "sasha", "jethro"]
-women = ["julia", "ella", "lefke"]
+men = ["aaron", "brad", "charles"]
+women = ["alice", "betty", "claire"]
 
 prefs = {
-    "lefke": ["sasha", "jethro", "ted"],
-    "ella": ["sasha", "ted", "jethro"],
-    "julia": ["jethro", "sasha", "ted"],
-    "ted": ["ella", "julia", "lefke"],
-    "sasha": ["ella", "lefke", "julia"],
-    "jethro": ["lefke", "julia", "ella"],
+    "claire": ["brad", "charles", "aaron"],
+    "betty": ["brad", "aaron", "charles"],
+    "alice": ["charles", "brad", "aaron"],
+    "aaron": ["betty", "alice", "claire"],
+    "brad": ["betty", "claire", "alice"],
+    "charles": ["claire", "alice", "betty"],
 }
 
 matches = {
-    "ella": None,
-    "lefke": None,
-    "julia": None,
+    "betty": None,
+    "claire": None,
+    "alice": None,
 }
 
 free_women = women.copy()

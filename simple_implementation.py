@@ -1,66 +1,25 @@
-men = [
-    "aaron",
-    "brad",
-    "charles",
-    "david",
-    "edward",
-    "frank",
-    "greg",
-    "harry",
-]
-
-women = [
-    "alice",
-    "betty",
-    "claire",
-    "donna",
-    "esther",
-    "fay",
-    "grace",
-    "holly",
-]
+men = ["aaron", "brad", "charles"]
+women = ["alice", "betty", "claire"]
 
 prefs = {
-    # women
-    "alice": ['frank', 'greg', 'aaron', 'brad', 'charles', 'edward', 'david', 'harry'],
-    "betty": ['charles', 'aaron', 'brad', 'greg', 'edward', 'frank', 'david', 'harry'],
-    "claire": ['edward', 'charles', 'frank', 'aaron', 'david', 'brad', 'greg', 'harry'],
-    "donna": ['brad', 'greg', 'frank', 'aaron', 'edward', 'david', 'harry', 'charles'],
-    "esther": ['brad', 'aaron', 'charles', 'frank', 'greg', 'david', 'harry', 'edward'],
-    "fay": ['edward', 'greg', 'david', 'brad', 'harry', 'frank', 'charles', 'aaron'],
-    "grace": ['david', 'frank', 'brad', 'harry', 'greg', 'edward', 'aaron', 'charles'],
-    "holly": ['greg', 'edward', 'charles', 'frank', 'harry', 'aaron', 'brad', 'david'],
-    # men
-    "aaron": ['holly', 'fay', 'donna', 'grace', 'betty', 'esther', 'claire', 'alice'],
-    "brad": ['claire', 'betty', 'esther', 'alice', 'grace', 'holly', 'donna', 'fay'],
-    "charles": ['betty', 'holly', 'alice', 'donna', 'fay', 'grace', 'claire', 'esther'],
-    "david": ['grace', 'holly', 'esther', 'betty', 'claire', 'alice', 'fay', 'donna'],
-    "edward": ['claire', 'betty', 'fay', 'esther', 'grace', 'donna', 'holly', 'alice'],
-    "frank": ['betty', 'claire', 'esther', 'grace', 'fay', 'alice', 'holly', 'donna'],
-    "greg": ['claire', 'fay', 'alice', 'holly', 'esther', 'betty', 'grace', 'donna'],
-    "harry": ['betty', 'alice', 'claire', 'donna', 'holly', 'fay', 'esther', 'grace'],
+    "alice": ["charles", "brad", "aaron"],
+    "betty": ["brad", "aaron", "charles"],
+    "claire": ["brad", "charles", "aaron"],
+    "aaron": ["betty", "alice", "claire"],
+    "brad": ["claire", "betty", "alice"],
+    "charles": ["claire", "alice", "betty"],
 }
 
 matches = {
     "alice": None,
     "betty": None,
     "claire": None,
-    "donna": None,
-    "esther": None,
-    "fay": None,
-    "grace": None,
-    "holly": None,
 }
 
 exclusions = {
     "aaron": [],
     "brad": [],
     "charles": [],
-    "david": [],
-    "edward": [],
-    "frank": [],
-    "greg": [],
-    "harry": [],
 }
 
 def get_top_preference(woman):
