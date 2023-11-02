@@ -1,18 +1,18 @@
 # Deferred Acceptance algorithm
 
-> The deferred acceptance algorithm, also known as the Gale–Shapley algorithm or
+The deferred acceptance algorithm, also known as the Gale–Shapley algorithm or
 propose-and-reject algorithm, is an algorithm for finding a solution to the
 [stable matching problem](https://en.wikipedia.org/wiki/Stable_marriage_problem),
 named for David Gale and Lloyd Shapley.
 
-> It takes polynomial time, and the time is linear in the size of the input to
+It takes polynomial time, and the time is linear in the size of the input to
 the algorithm. It is a truthful
 ([strategyproof](https://en.wikipedia.org/wiki/Strategyproofness))
 mechanism from the point of view of the proposing participants (women in our
 example), for whom the solution will always be optimal (but not from the point
 of view of the accepting/rejecting participants (men in our example).
 
-— Wikipedia: https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm
+> The above adapter from Wikipedia: https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm
 
 [deferred-acceptance.ipynb](deferred-acceptance.ipynb) is a Jupyter notebook,
 which goes through a non-optimised and easy to reason implementation of the
