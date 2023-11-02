@@ -1,25 +1,78 @@
-men = ["ted", "sasha", "jethro"]
-women = ["julia", "ella", "lefke"]
+men = [
+    "aaron",
+    "brad",
+    "charles",
+    "david",
+    "edward",
+    "frank",
+    "greg",
+    "harry",
+    "irving",
+    "jack",
+]
+
+women = [
+    "alice",
+    "betty",
+    "claire",
+    "donna",
+    "esther",
+    "fay",
+    "grace",
+    "holly",
+    "isabella",
+    "jane",
+]
 
 prefs = {
-    "lefke": ["sasha", "jethro", "ted"],
-    "ella": ["sasha", "ted", "jethro"],
-    "julia": ["jethro", "sasha", "ted"],
-    "ted": ["ella", "julia", "lefke"],
-    "sasha": ["lefke", "ella", "julia"],
-    "jethro": ["lefke", "julia", "ella"],
+    # women
+    "alice": ['frank', 'greg', 'aaron', 'brad', 'charles', 'edward', 'irving', 'david', 'jack', 'harry'],
+    "betty": ['charles', 'aaron', 'brad', 'greg', 'edward', 'frank', 'jack', 'david', 'harry', 'irving'],
+    "claire": ['edward', 'charles', 'frank', 'aaron', 'david', 'brad', 'irving', 'jack', 'greg', 'harry'],
+    "donna": ['brad', 'greg', 'jack', 'frank', 'aaron', 'irving', 'edward', 'david', 'harry', 'charles'],
+    "esther": ['brad', 'aaron', 'charles', 'irving', 'frank', 'greg', 'david', 'jack', 'harry', 'edward'],
+    "fay": ['jack', 'edward', 'greg', 'david', 'irving', 'brad', 'harry', 'frank', 'charles', 'aaron'],
+    "grace": ['david', 'frank', 'brad', 'harry', 'greg', 'edward', 'aaron', 'irving', 'charles', 'jack'],
+    "holly": ['greg', 'edward', 'charles', 'jack', 'frank', 'harry', 'irving', 'aaron', 'brad', 'david'],
+    "isabella": ['greg', 'david', 'aaron', 'edward', 'brad', 'harry', 'frank', 'jack', 'charles', 'irving'],
+    "jane": ['greg', 'charles', 'irving', 'harry', 'aaron', 'david', 'brad', 'edward', 'frank', 'jack'],
+    # men
+    "aaron": ['jane', 'holly', 'fay', 'donna', 'grace', 'betty', 'esther', 'isabella', 'claire', 'alice'],
+    "brad": ['claire', 'betty', 'jane', 'esther', 'alice', 'grace', 'holly', 'isabella', 'donna', 'fay'],
+    "charles": ['betty', 'holly', 'alice', 'donna', 'fay', 'jane', 'grace', 'claire', 'isabella', 'esther'],
+    "david": ['grace', 'holly', 'isabella', 'jane', 'esther', 'betty', 'claire', 'alice', 'fay', 'donna'],
+    "edward": ['claire', 'betty', 'fay', 'esther', 'grace', 'donna', 'isabella', 'jane', 'holly', 'alice'],
+    "frank": ['betty', 'jane', 'claire', 'esther', 'grace', 'fay', 'alice', 'isabella', 'holly', 'donna'],
+    "greg": ['claire', 'fay', 'alice', 'jane', 'isabella', 'holly', 'esther', 'betty', 'grace', 'donna'],
+    "harry": ['jane', 'isabella', 'betty', 'alice', 'claire', 'donna', 'holly', 'fay', 'esther', 'grace'],
+    "irving": ['fay', 'donna', 'claire', 'alice', 'holly', 'jane', 'esther', 'isabella', 'grace', 'betty'],
+    "jack": ['claire', 'holly', 'fay', 'betty', 'jane', 'esther', 'grace', 'isabella', 'alice', 'donna'],
 }
 
 matches = {
-    "ella": None,
-    "lefke": None,
-    "julia": None,
+    "alice": None,
+    "betty": None,
+    "claire": None,
+    "donna": None,
+    "esther": None,
+    "fay": None,
+    "grace": None,
+    "holly": None,
+    "isabella": None,
+    "jane": None,
 }
 
 exclusions = {
-    "ted": [],
-    "sasha": [],
-    "jethro": [],
+    "aaron": [],
+    "brad": [],
+    "charles": [],
+    "david": [],
+    "edward": [],
+    "frank": [],
+    "greg": [],
+    "harry": [],
+    "irving": [],
+    "jack": [],
 }
 
 def get_top_preference(woman):
@@ -76,6 +129,5 @@ while free_women:
         matches[woman] = man
 
     print()
-
 
 print(matches)
